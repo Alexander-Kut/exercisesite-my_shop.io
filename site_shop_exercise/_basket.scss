@@ -1,0 +1,307 @@
+@import "variables";
+
+
+.top-basket {
+    background-image: url(./images/fon_basket.jpeg);
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+}
+
+.heading-basket {
+    font-size: $font-size + 50px;
+    font-weight: 600;
+    line-height: 70px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #ffffff;
+    margin-top: 127px;
+}
+
+.basket {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-top: 64px;
+    gap: $gap;
+    &__goods {
+        display: flex;
+        justify-content: space-between;
+        height: 20px;
+        margin-bottom: 14px;
+        padding-right: 27px;
+        padding-left: 3px;
+        
+    }
+    &__goods-text {
+        color: $font-color;
+        font-family: Montserrat;
+        font-size: $font-size-secondary;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    
+    &__product {
+        display: grid;
+        grid-column: span 8;
+    }
+
+    &__item {
+        
+        padding-top: 25px;
+        display: flex; 
+        justify-content: space-between;
+        border-top: 0.5px solid #cacdd8;
+        margin-bottom: $gap;
+    }  
+    
+    &__item-div {
+        display: flex;
+        flex-direction: column;
+        gap: $gap - 18px;
+    }
+
+
+    &__item_altered {
+        padding-top: $gap;
+    }
+    &__item-block {
+        display: flex;
+        gap: $gap;
+    }
+
+
+
+    &__info{
+        display: flex;
+        flex-direction: column;
+        gap: $gap - 18px;
+        
+    }
+    &__item-name {
+        font-size: $font-size + 10px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    &__item-text {
+        color: #888;
+        font-family: Montserrat;
+        font-size: $font-size;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0%;
+        text-align: left;
+        width: 276px;
+    }
+    &__item-price {
+        color: #050505;
+        font-family: Montserrat;
+        font-size: $font-size-secondary;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: left;
+    }
+    &__link {
+        display: flex;
+        gap: 30px;
+    }
+    &__link-button {
+        color: $font-color;
+        font-family: Montserrat;
+        font-size: $font-size;
+        font-weight: 400;
+        line-height: 210%;
+        letter-spacing: 0px;
+        text-align: center;
+        text-decoration-line: underline;
+
+    }
+    
+    &__link-button:hover {
+        text-decoration-line: none;
+        color: #888;
+    }
+
+    &__button-div {
+        display: flex;
+        margin-top: 18px;
+        height: 37px;
+        gap: 7px;
+    }
+
+    &__button {
+        box-sizing: border-box;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        height: 37px;
+        background: #ffffff;
+        color: #020202;
+        font-family: Montserrat;
+        font-size: $font-size;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding-left: $gap - 12px;
+        padding-right: $gap - 12px;
+        width: $width;
+    }
+
+    &__button:hover {
+        background-color: #000000;
+        color: #ffffff;
+        transition: 1.5s;
+    }
+
+    &__form {
+        display: grid;
+        grid-column: span 4;
+        border-radius: 20px;
+        background: #f7f6f6;
+      
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+.heading__form {
+    color: $font-color;
+    font-family: Montserrat;
+    font-size: $font-size + 10px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 42px;
+    margin-bottom: 35px;
+    height: 36px;
+}
+
+.form__input {
+    height: 143px;
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    width: 288px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    padding-left: 26px;
+    padding-right: 64px;
+    
+}
+
+.form__input-text {
+    color: $font-color;
+    font-family: Montserrat;
+    font-size: $font-size;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: left;
+    border: none;
+    background: #f7f6f6;
+    border-bottom: 1px solid #cacdd8;
+}
+
+.form-basket__button {
+    box-sizing: border-box;
+    border: 1px solid rgb(4, 4, 4);
+    border-radius: 20px;
+    width: 290px;
+    height: 41px;
+    color: $font-color;
+    font-family: Montserrat;
+    font-size: $font-size-secondary;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 18px;
+    margin-left: 44px;
+    margin-right: 44px;
+    background-color: #f7f6f6;
+    margin-bottom: 148px;
+    }
+
+    .form-basket__button:hover {
+        background-color: #2d2d2d;
+        color:#ffffff;
+        transition: 1.5s;
+    
+    }
+
+    .form-basket__button:active {
+        border: 3px solid #d0cece;
+        transform: scale(1.1);
+    }
+
+.form__total {
+    color: $font-color;
+    font-family: Montserrat;
+    font-size: $font-size + 10px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 64px;
+    width: 379px;
+}
+
+.form__total-price {
+    color: $font-color;
+    font-family: Montserrat;
+    font-size: $font-size + 10px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 64px;
+    width: 379px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+   opacity: 1; 
+}   
+
+.number-choice {
+    height: 51px;
+    width: 71px;
+    background: #f7f6f6;
+    color: $font-color;
+    border-radius: 6px;   
+    
+    padding-top: 11px;
+    padding-bottom: 13px;
+    box-sizing: border-box;
+    padding-right: 14px;
+   
+}
+.arrow {
+    height: 27px;
+    width: 55px;   
+   
+    border: none;
+    background: #f7f6f6;
+    color: $font-color;
+    font-family: Poppins, Montserrat;
+    font-size: $font-size;
+    font-weight: 600;
+    line-height: 210%;
+    letter-spacing: 0px;
+    text-align: center;
+    
+    box-sizing: border-box;
+   appearance: none;
+    
+    
+}    
