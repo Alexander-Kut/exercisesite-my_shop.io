@@ -15,4 +15,4 @@
 
 
 ## Деплой проекта 
-exercisesite-my_shop.io
+https://alexander-kut.github.io/exercisesite-my_shop.io/
